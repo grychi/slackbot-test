@@ -14,6 +14,9 @@ app.post('/', (req, res) => {
     if (req.body.challenge) {
         response.challenge = req.body.challenge;
     }
+    else {
+        console.log(req.body);
+    }
     res.send(response)
 })
 
